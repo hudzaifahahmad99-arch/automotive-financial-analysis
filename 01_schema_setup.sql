@@ -25,12 +25,12 @@ CREATE TABLE fact_financials (
     current_assets      NUMERIC(20,2),
     current_liabilities NUMERIC(20,2),
     inventory            NUMERIC(20,2),
-    receivables          NUMERIC(20,2),          -- piutang usaha
-    payables              NUMERIC(20,2),          -- utang usaha
+    receivables          NUMERIC(20,2),          
+    payables              NUMERIC(20,2),          
     total_assets          NUMERIC(20,2),
     total_equity          NUMERIC(20,2),
  
-    UNIQUE (company_id, period_id)               -- satu emiten cuma 1 baris per tahun
+    UNIQUE (company_id, period_id)               
 );
 
 INSERT INTO dim_company (ticker, company_name) VALUES
